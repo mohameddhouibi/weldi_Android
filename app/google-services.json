@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "452653739718",
+    "firebase_url": "https://weldi-2e1a9.firebaseio.com",
+    "project_id": "weldi-2e1a9",
+    "storage_bucket": "weldi-2e1a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452653739718:android:1660d25bd2e10626b8b1c7",
+        "android_client_info": {
+          "package_name": "com.dhouibimohamed.weldi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452653739718-7nm0okd2o4adcssbei5ercl64jnfteqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7_gfQsyhKYV53aWIEvUKQf53lWQleDjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452653739718-7nm0okd2o4adcssbei5ercl64jnfteqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
