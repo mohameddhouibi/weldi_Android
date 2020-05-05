@@ -2,18 +2,60 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dhouibimohamed.weldi">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
+        android:name=".Persistance_Object.MyFirebaseApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/welcome"
+        android:label="Weldi"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".ResultActivity"></activity>
-        <activity android:name=".Main2ActivitySec1" />
-        <activity android:name=".Activity_Levels1" />
-        <activity android:name=".Activity_SignUp" />
-        <activity android:name=".Activity_Login" />
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ParentsCatActivity.Cat5Activity"></activity>
+        <activity android:name=".ParentsCatActivity.Cat4Activity" />
+        <activity android:name=".ParentsCatActivity.Cat3Activity" />
+        <activity android:name=".ParentsCatActivity.Cat2Activity" />
+        <activity android:name=".ParentsCatActivity.Cat1Activity" />
+        <activity android:name=".Choix6Activity" />
+        <activity android:name=".Choix5Activity" />
+        <activity android:name=".Choix4Activity" />
+        <activity android:name=".Choix3Activity" />
+        <activity android:name=".choix2Activity" />
+        <activity android:name=".ChoixCategorieActivity" />
+        <activity android:name=".DrawActivity" />
+        <activity android:name=".ParentsThingsActivity" />
+        <activity android:name=".ProfileChildviaParentActivity" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".InteretParentActivity" />
+        <activity
+            android:name=".ProfileChildActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ProfileParentActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ParentActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +63,63 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Main3Activity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".LeaderBoardAcSec2E" />
+        <activity android:name=".LeaderBoardAcSec2I" />
+        <activity android:name=".LeaderBoardAcSec2B" />
+        <activity android:name=".LeaderBoardAcSec1E" />
+        <activity android:name=".LeaderBoardAcSec1I" />
+        <activity android:name=".LeaderLevel3" />
+        <activity android:name=".LeaderLevel2" />
+        <activity android:name=".ScoreLevel3" />
+        <activity android:name=".ScoreLevel2" />
+        <activity android:name=".Main2ActivitySec3" />
+        <activity android:name=".Activity_Levels3" />
+        <activity android:name=".Main2ActivitySec2" />
+        <activity android:name=".Activity_Levels2" />
+        <activity
+            android:name=".ColoringActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MemoryActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".ParentActivity4"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".RetroEntities.ParentActivity3"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".RetroEntities.ParentActivity2" />
+        <activity
+            android:name=".ResultActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Activity_Login"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".RetroEntities.ParentActivity1" />
+        <activity android:name=".LeaderBoardAcSec1B" />
+        <activity android:name=".LeaderLevel1" />
+        <activity android:name=".LeaderScoreActivity" />
+        <activity android:name=".Activity_LevelScore" />
+        <activity android:name=".ScoreLevel1" />
+        <activity android:name=".ScoreActivity" />
+        <activity android:name=".WrongQuestion" />
+        <activity
+            android:name=".Main2ActivitySec1"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".Activity_Levels1" />
+        <activity
+            android:name=".Activity_SignUp"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

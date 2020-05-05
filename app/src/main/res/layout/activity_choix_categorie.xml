@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoixCategorieActivity"
+    android:background="@drawable/backk">
+
+
+    <ImageView
+        android:id="@+id/test"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="-2dp"
+        android:src="@drawable/categorieparent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-2dp" />
+
+    <Spinner
+        android:id="@+id/spinnercategorie"
+        android:layout_width="192dp"
+        android:layout_height="132dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_toEndOf="@+id/test"
+        android:layout_toRightOf="@+id/test">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/b0"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnercategorie"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/rec_gradient"
+        android:fontFamily="@font/montserrat"
+        android:text="Confirm"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+</RelativeLayout>

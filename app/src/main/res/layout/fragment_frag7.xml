@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParentFragments.Frag7" android:background="@drawable/backk"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="609dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/linn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:id="@+id/qstparent"
+                android:layout_width="234dp"
+                android:layout_height="196dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp"
+                android:text="Large Text"
+                android:fontFamily="@font/montserrat"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorPrimaryDark" >
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/teach"
+                android:layout_width="wrap_content"
+                android:layout_height="366dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="206dp"
+                android:layout_marginRight="206dp"
+                android:src="@drawable/thkar"></ImageView>
+
+            <ImageView
+                android:id="@+id/vrai"
+                android:layout_width="81dp"
+                android:layout_height="96dp"
+                android:layout_below="@+id/qstparent"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:src="@drawable/tkk"
+                android:visibility="invisible">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/faux"
+                android:layout_width="81dp"
+                android:layout_height="96dp"
+                android:layout_below="@+id/qstparent"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:src="@drawable/tkk"
+                android:visibility="invisible">
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView1"
+
+            android:layout_weight="0.03">
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rec_gradient_fb"
+                android:checked="false"
+                android:text="RadioButton"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat"
+                />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/rec_gradient"
+                android:text="RadioButton"
+                android:textColor="#FAFAFA"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat"
+                />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/recc"
+                android:text="RadioButton"
+                android:textColor="#F5F5F5"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat"
+                />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/recc1"
+                android:text="RadioButton"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>

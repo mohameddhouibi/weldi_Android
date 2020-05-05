@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backk"
+
+    tools:context=".ScoreActivity"
+   >
+
+    <ImageView
+        android:id="@+id/immm"
+        android:layout_width="194dp"
+        android:layout_height="165dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/sccore"></ImageView>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_below="@+id/immm"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fundamentals"
+                    android:layout_width="0dp"
+
+                    android:layout_height="200dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rec_gradient_fb"
+                    android:drawableTop="@drawable/computera"
+                    android:paddingTop="25dp"
+                    android:text="Computer"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/montserrat"
+                    />
+
+
+                <Button
+                    android:id="@+id/operating"
+                    android:layout_width="0dp"
+
+                    android:layout_height="200dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rec_gradient"
+                    android:drawableTop="@drawable/sports"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="25dp"
+                    android:text="Sports"
+                    android:textAllCaps="false"
+                    android:textColor="#FCFCFC"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/montserrat"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hardware"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/recc"
+
+                    android:drawableTop="@drawable/computera"
+                    android:paddingTop="25dp"
+                    android:text="Computer"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/montserrat"
+                    />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

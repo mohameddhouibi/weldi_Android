@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParentActivity"
+    android:background="@drawable/backk"
+    >
+
+    <ImageView
+        android:id="@+id/father"
+        android:layout_width="178dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/father">
+
+    </ImageView>
+
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rec_gradient"
+        android:fontFamily="@font/montserrat"
+        android:text="Profil child"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/b1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rec_gradient"
+        android:fontFamily="@font/montserrat"
+        android:text="Register child"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/b2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rec_gradient"
+        android:fontFamily="@font/montserrat"
+        android:text="Add Question"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

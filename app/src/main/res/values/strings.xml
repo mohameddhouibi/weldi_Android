@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Comp Quiz</string>
+    <string name="app_name">Weldi</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">487779608825095</string>
+    <string name="fb_login_protocol_scheme">fb487779608825095</string>
+
 </resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".Main3Activity"
+    android:background="@drawable/backk">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="568dp"
+            android:layout_below="@+id/layouttoolbar"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fundamentals"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rec_gradient_fb"
+                    android:drawableTop="@drawable/computera"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingTop="25dp"
+                    android:text="general knowledge"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/sport"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rec_gradient"
+                    android:drawableTop="@drawable/sports"
+                    android:fontFamily="@font/montserrat"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="25dp"
+                    android:text="Sport"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/texti"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/recc"
+                    android:drawableTop="@drawable/tounsi"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingTop="25dp"
+                    android:text="Tounsi"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+
+                <Button
+                    android:id="@+id/memory"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/recc1"
+                    android:drawableTop="@drawable/capital"
+                    android:fontFamily="@font/montserrat"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="25dp"
+                    android:text="Maths"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/coloring"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/recnex"
+                    android:drawableTop="@drawable/paint"
+                    android:fontFamily="@font/montserrat"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="25dp"
+                    android:text="Arts"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/pp"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/reec5"
+                    android:drawableTop="@drawable/cinema"
+                    android:fontFamily="@font/montserrat"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="25dp"
+                    android:text="Cinema"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+</RelativeLayout>

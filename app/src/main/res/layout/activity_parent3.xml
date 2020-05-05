@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RetroEntities.ParentActivity3"
+    android:background="@drawable/backk">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/parentimage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+      android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="0dp"
+            android:src="@drawable/parents">
+
+        </ImageView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="401dp"
+            android:layout_below="@+id/parentimage"
+            android:layout_height="438dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="51dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="388dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:background="@drawable/recc6"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/circle_stroke_white"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_lock"
+                        android:tint="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="LOGIN"
+                        android:textColor="#fff"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/linearlayout1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-10dp"
+                    android:rotation="45"
+                    android:src="@drawable/square" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp">
+
+                    <ImageView
+                        android:id="@+id/imageView_user_email"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="#F3B200"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_email"
+                        android:tint="#fff" />
+
+                    <EditText
+                        android:id="@+id/user_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageView_user_email"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imageView_user_email"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/montserrat"
+
+                        android:hint="Email"
+                        android:inputType="text|textEmailAddress"
+                        android:paddingLeft="20dp"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relativeLayout2"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp">
+
+                    <ImageView
+                        android:id="@+id/imageView_user_pass"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="#F3B200"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_lock"
+                        android:tint="#fff" />
+
+                    <EditText
+                        android:id="@+id/user_pass"
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/montserrat"
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageView_user_pass"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imageView_user_pass"
+                        android:background="@color/transparent"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:paddingLeft="20dp"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/signins"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/rec_gradient"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Sign In"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                  />
+
+                <Button
+                    android:id="@+id/btn_new_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/signins"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="15sp"
+                    android:background="@drawable/rec_gradient"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Don't have an account ? Sign Up"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                     />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

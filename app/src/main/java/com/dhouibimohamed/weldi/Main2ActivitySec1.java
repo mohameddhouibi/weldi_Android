@@ -2,6 +2,7 @@ package com.dhouibimohamed.weldi;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -47,6 +48,10 @@ public class Main2ActivitySec1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2_sec1);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarr);
+      //  setSupportActionBar(toolbar);
+        setTitle("Quiz");
+    //    toolbar.setNavigationIcon(R.drawable.ic_icon);
         qstnNo = (TextView)findViewById(R.id.qstnNo);
         Intent iin=getIntent();
         Bundle b=iin.getExtras();
@@ -60,7 +65,7 @@ public class Main2ActivitySec1 extends AppCompatActivity {
         number=0;
         DbHelper db= new DbHelper(this);
         textViewTime1 = (TextView)findViewById(R.id.textViewTime);
-        final CounterClass timer = new CounterClass(1800000, 1000);
+        final CounterClass timer = new CounterClass(800000, 1000);
         timer.start();
         quesList1=db.getAllQuestions1(tableName,catName);
         for(int i=0;i<50;i++){
@@ -194,8 +199,6 @@ public class Main2ActivitySec1 extends AppCompatActivity {
 
         //Creating dialog box
         AlertDialog alert = builder.create();
-        //Setting the title manually
-        // alert.setTitle("CompQuiz");
         alert.show();
     }
 

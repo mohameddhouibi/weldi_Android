@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backk">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:background="@drawable/rect_background_pink">
+
+                <TextView
+                    android:id="@+id/qstnNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:text="01/30"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="05:00"
+                android:textColor="@color/colorAccent"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="609dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/linn"
+                android:layout_width="match_parent"
+                android:layout_height="393dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/qstparent"
+                    android:layout_width="234dp"
+                    android:layout_height="196dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="106dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginRight="1dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Large Text"
+
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/colorPrimaryDark">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/teach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="366dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginEnd="202dp"
+                    android:layout_marginRight="202dp"
+                    android:src="@drawable/thkar"></ImageView>
+
+                <ImageView
+                    android:id="@+id/vrai"
+                    android:layout_width="81dp"
+                    android:layout_height="96dp"
+                    android:layout_below="@+id/qstparent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+
+                    android:src="@drawable/tkk"
+                    android:visibility="invisible">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/faux"
+                    android:layout_width="81dp"
+                    android:layout_height="96dp"
+                    android:layout_below="@+id/qstparent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="1dp"
+
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:src="@drawable/tkk"
+                    android:visibility="invisible">
+
+                </ImageView>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@style/CustomProgressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:max="30" />
+
+
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/teach"
+
+                android:layout_weight="0.03">
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rec_gradient_fb"
+                    android:checked="false"
+                    android:text="RadioButton"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/montserrat"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@drawable/rec_gradient"
+                    android:text="RadioButton"
+                    android:textColor="#FAFAFA"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/montserrat"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@drawable/recc"
+                    android:text="RadioButton"
+                    android:textColor="#F5F5F5"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/montserrat"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/recc1"
+                    android:text="RadioButton"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/montserrat"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
